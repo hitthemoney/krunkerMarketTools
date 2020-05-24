@@ -1,7 +1,5 @@
 # krunkerMarketTools
 
-## I KNOW THERE IS A MUSIC BUG I AM CURRENTLY WORKING ON FIXING IT
-
 ### Features
 Audio settings for krunker market, krunker market ping, dark mode option, UI scale, and suggested prices through out the market (not just on your inventory and trades).
 

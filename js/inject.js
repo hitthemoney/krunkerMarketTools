@@ -130,18 +130,18 @@ body {
 
 			var pingHolder = document.createElement("span")
 			document.getElementById("navButtons").insertBefore(pingHolder, document.getElementById("navButtons").childNodes[0])
-			pingHolder.outerHTML = `<span id="pingHolder" style="color: white; display: block; margin-top: 10px; font-size: 20px; margin-left: 20px">Loading</span`
+			pingHolder.outerHTML = `<span id="pingHolder" style="color: white; display: inline-block; margin-top: 10px; margin-right: 10px; font-size: 20px;">Loading</span`
 
 			function showPingFunc() {
 				let pingHolder = document.getElementById("pingHolder")
 				if (pingStyleCheckbox.checked == false) {
 					pingHolder.style.display = "none"
-					setCookie("showPing", "false", 365)
+					setCookie("showPing", "false", 365);
 				} else {
 					pingHolder.style = "color: white; display: inline-block; margin-top: 10px; margin-left: 250px; font-size: 20px;"
-					setCookie("showPing", "true", 365)
-				}
-			}
+					setCookie("showPing", "true", 365);
+				};
+			};
 
 			function showEstValFunc() {
 				if (estValStyleCheckbox.checked == true) {
@@ -155,7 +155,7 @@ body {
 .estVal2 {
     display: none;
 }`
-					setCookie("showEstVal", "false", 365)
+					setCookie("showEstVal", "false", 365);
 				}
 			}
 
@@ -174,8 +174,8 @@ body {
 			}
 
 			function commaPrice(price) {
-				return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-			}
+				return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			};
 
 			var toolsHolder = document.createElement("div")
 			document.body.appendChild(toolsHolder)
@@ -210,28 +210,28 @@ body {
 			<span id="pingHolder2" style="text-align: center; display: block; margin-top: 20px; font-size: 40px;">Ping: Loading</span><br>
 			</div>		
 </div>
-			`
-			changeUIScale(getCookie("UIScale"))
-			var st = document.createElement("style")
-			document.head.appendChild(st)
+			`;
+			changeUIScale(getCookie("UIScale"));
+			var st = document.createElement("style");
+			document.head.appendChild(st);
 
 			var blackStyleCheckbox = document.getElementById("blackStyleCheckbox");
 			var pingStyleCheckbox = document.getElementById("pingStyleCheckbox");
 			var estValStyleCheckbox = document.getElementById("estValStyleCheckbox");
-			blackStyleCheckbox.checked = stringToBool(getCookie("darkMode"))
-			darkModeFunc()
-			pingStyleCheckbox.checked = stringToBool(getCookie("showPing"))
-			showPingFunc()
-			estValStyleCheckbox.checked = stringToBool(getCookie("showEstVal"))
-			showEstValFunc()
+			blackStyleCheckbox.checked = stringToBool(getCookie("darkMode"));
+			darkModeFunc();
+			pingStyleCheckbox.checked = stringToBool(getCookie("showPing"));
+			showPingFunc();
+			estValStyleCheckbox.checked = stringToBool(getCookie("showEstVal"));
+			showEstValFunc();
 			blackStyleCheckbox.onclick = (function () {
-				darkModeFunc()
+				darkModeFunc();
 			});
 			pingStyleCheckbox.onclick = (function () {
-				showPingFunc()
+				showPingFunc();
 			});
 			estValStyleCheckbox.onclick = (function () {
-				showEstValFunc()
+				showEstValFunc();
 			});
 			this.soundVol1 = parseFloat(getCookie("musicVol"))
 			this.soundVol2 = parseFloat(getCookie("UIVol"))

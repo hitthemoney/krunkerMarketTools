@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Krunker Market Tools</title>
+    <style>
+        @font-face {
+            font-family: 'gamefont';
+            src: url('./font2.ttf');
+        }
+
+        html,
+        body {
+            font-family: gamefont !important;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        #ping {
+            font-size: 1.5em;
+            margin-bottom: 2em;
+        }
+
+        canvas {
+            max-width: 500px;
+            margin: auto;
+            display: block;
+        }
+
+        .yeehow {
+            color: #fff;
+            font-size: 0.75em;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        .hitthemoney {
+      color: #fff;
+      font-size: 0.75em;
+      opacity: 0.5;
+      text-decoration: none;
+    }
+
+    .yeehow:hover {
+      opacity: 0.4;
+    }
+
+    .hitthemoney:hover {
+      opacity: 0.4;
+    }
+    </style>
+
+    <script src="./js/chart.js"></script>
+</head>
+
+<body>
+    <h3>Krunker Market Tools</h3>
+    <p>Krunker Market Ping</p>
+    <p id="ping">loading</p>
+
+    <canvas id="myChart"></canvas>
+
+    <br>
+
+    <a href="https://yee.how" target="_blank" class="yeehow">yeehow</a>
+    <br>
+    <a href="https://hitthemoney.github.io" target="_blank"
+    class="hitthemoney">hitthemoney</a>
+    <script src="./js/msgpack.js"></script>
+    <script src="./js/ping.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "Krunker Market Tools",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "author": "hitthemoney and yeehow",
+  "description": "Shows ping, time offset, and dark mode, on krunker market! ",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./Images/icon16.png",
+      "32": "./Images/icon32.png",
+      "128": "./Images/icon128.png"
+    },
+    "default_title": "Krunker Market Tools"
+  },
+  "icons": {
+    "16": "./Images/icon16.png",
+    "32": "./Images/icon32.png",
+    "128": "./Images/icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.krunker.io/*"],
+    "js": ["./js/inject.js"],
+    "css": ["./css/styles.css"]
+  }],
+  "web_accessible_resources": [
+    "social.html"
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "cookies",
+    "*://*.krunker.io/*"
+  ]
+}

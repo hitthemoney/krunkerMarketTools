@@ -270,7 +270,7 @@ body {
 
 			var navButtons = document.getElementById("navButtons")
 			var settingsButton = document.createElement("div");
-			navButtons.insertBefore(settingsButton, document.getElementById("virus"));
+			navButtons.insertBefore(settingsButton, document.getElementById("blackm"));
 			settingsButton.outerHTML = `<div onmouseover="SOUND.play('tick_0',0.1)" onclick="updateWindow('settings')" id="settings" class="material-icons mic1 menuBtn" style="opacity: 0.5;">settings</div>`;
 			let pParam = urlNew.searchParams.get('p');
 
@@ -281,7 +281,7 @@ body {
 				let toolsHolder = document.getElementById("toolsHolder");
 				let settings = document.getElementById("settings");
 				let buttons = ["leaders", "profile", "maps", "market", "tourney", "blackm"];
-				let holders = ["leader", "profile", "maps", "market", "tourney", "virus"];
+				let holders = ["leader", "profile", "maps", "market", "tourney", "blackm"];
 				for (i = 0; i < buttons.length; i++) {
 					document.getElementById(buttons[i]).style = "opacity: 1;";
 					document.getElementById(`${holders[i]}Holder`).style.display = "none";

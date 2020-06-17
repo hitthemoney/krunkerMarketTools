@@ -19,7 +19,7 @@
     "128": "./Images/icon128.png"
   },
   "content_scripts": [{
-    "matches": ["*://*.krunker.io/*"],
+    "matches": ["*://*.krunker.io/social.html*"],
     "js": ["./js/inject.js"],
     "css": ["./css/styles.css"],
     "run_at": "document_end"

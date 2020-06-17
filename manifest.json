@@ -21,7 +21,8 @@
   "content_scripts": [{
     "matches": ["*://*.krunker.io/*"],
     "js": ["./js/inject.js"],
-    "css": ["./css/styles.css"]
+    "css": ["./css/styles.css"],
+    "run_at": "document_end"
   }],
   "web_accessible_resources": [
     "social.html"

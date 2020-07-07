@@ -9,7 +9,7 @@ Audio settings for krunker market, krunker market ping, dark mode option, UI sca
 
 1. Download the zip where it says clone or download
 
-2. extract the zip.
+2. Extract the zip.
 
 3. Open up the browser you want the extension installed on
 

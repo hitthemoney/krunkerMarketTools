@@ -285,10 +285,11 @@ body {
 			window.showSettings = function () {
 				let toolsHolder = document.getElementById("toolsHolder");
 				let settings = document.getElementById("settings");
-				let buttons = ["leaders", "profile", "maps", "market", "tourney", "blackm"];
+				let buttons = ["leader", "profile", "maps", "market", "tourney", "blackm"];
 				let holders = ["leader", "profile", "maps", "market", "tourney", "blackm"];
 				for (i = 0; i < buttons.length; i++) {
-					document.getElementById(buttons[i]).style = "opacity: 1;";
+					console.log(document.getElementById(buttons[i]))
+					document.getElementById(buttons[i]+"Holder").style = "opacity: 1;";
 					document.getElementById(`${holders[i]}Holder`).style.display = "none";
 				};
 				settings.style = "opacity: 0.5;";
